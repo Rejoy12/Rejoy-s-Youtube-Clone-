@@ -1,4 +1,4 @@
-/* Reset & Base */
+
 * {
   margin: 0;
   padding: 0;
@@ -10,7 +10,7 @@ body {
   color: #0f0f0f;
 }
 
-/* Header */
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -58,7 +58,7 @@ body {
   margin-left: 16px;
 }
 
-/* Sidebar */
+
 .sidebar {
   position: fixed;
   top: 56px;
@@ -83,7 +83,7 @@ body {
   margin-right: 16px;
 }
 
-/* Categories */
+
 .categories {
   margin-left: 200px;
   padding: 12px 16px;
@@ -106,7 +106,7 @@ body {
   color: white;
 }
 
-/* Main Video Grid */
+
 .videos {
   margin-left: 200px;
   padding: 16px;
@@ -115,7 +115,7 @@ body {
   gap: 20px;
 }
 
-/* Video Card */
+
 .video-card {
   background-color: white;
   border-radius: 12px;
@@ -132,7 +132,7 @@ body {
   height: 170px;
   background-size: cover;
   background-position: center;
-  background-color: #000; /* fallback if image fails */
+  background-color: #000; 
   position: relative;
 }
 .thumbnail::after {
@@ -170,7 +170,7 @@ body {
   color: #606060;
 }
 
-/* Responsive */
+
 @media screen and (max-width: 768px) {
   .sidebar {
     display: none;
