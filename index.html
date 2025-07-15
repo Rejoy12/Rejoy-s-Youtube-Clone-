@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>YouTube Clone</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+  <style>
+    .header .right {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+    .header .avatar {
+      width: 32px;
+      height: 32px;
+      background-color: #c2185b;
+      border-radius: 50%;
+      color: white;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Roboto', sans-serif;
+      font-size: 16px;
+    }
+    .thumbnail-container {
+      position: relative;
+      width: 100%;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+    .thumbnail-container img {
+      width: 100%;
+      display: block;
+    }
+    .thumbnail-overlay {
+      position: absolute;
+      bottom: 6px;
+      right: 6px;
+      background-color: rgba(0, 0, 0, 0.75);
+      color: #fff;
+      font-size: 12px;
+      padding: 2px 6px;
+      border-radius: 4px;
+    }
+    .avatar-icon {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      background-color: #bbb;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      color: white;
+      font-size: 16px;
+      font-family: 'Roboto', sans-serif;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="left">
+      <span class="material-icons menu">menu</span>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/b/b8/YouTube_Logo_2017.svg" alt="YouTube" class="logo">
+    </div>
+    <div class="center">
+      <input type="text" placeholder="Search">
+      <button><span class="material-icons">search</span></button>
+      <span class="material-icons mic">mic</span>
+    </div>
+    <div class="right">
+      <span class="material-icons">video_call</span>
+      <span class="material-icons">notifications</span>
+      <div class="avatar">R</div>
+    </div>
+  </header>
+
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <div class="item"><span class="material-icons">home</span>Home</div>
+    <div class="item"><span class="material-icons">explore</span>Explore</div>
+    <div class="item"><span class="material-icons">subscriptions</span>Subscriptions</div>
+    <hr>
+    <div class="item"><span class="material-icons">video_library</span>Library</div>
+    <div class="item"><span class="material-icons">history</span>History</div>
+    <div class="item"><span class="material-icons">watch_later</span>Watch Later</div>
+    <div class="item"><span class="material-icons">thumb_up</span>Liked Videos</div>
+  </aside>
+
+  <!-- Categories -->
+  <nav class="categories">
+    <span class="active">All</span>
+    <span>Technical</span>
+    <span>Educational</span>
+    <span>Music</span>
+    <span>Movies</span>
+    <span>Sports</span>
+    <span>News</span>
+    <span>Networks</span>
+  </nav>
+
+  <!-- Video Grid -->
+  <main class="videos">
+    <!-- Kesari Video Card -->
+    <div class="video-card">
+      <div class="thumbnail-container">
+        <img src="https://img.youtube.com/vi/BddP6PYo2gs/hqdefault.jpg" alt="Kesariya Thumbnail">
+        <div class="thumbnail-overlay">210M views • 1 year ago</div>
+      </div>
+      <div class="info">
+        <div class="avatar-icon">A</div>
+        <div>
+          <h4>Kesariya | Brahmastra</h4>
+          <p>Arijit Singh</p>
+          <p>210M views • 1 year ago</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Baahubali Video Card -->
+    <div class="video-card">
+      <div class="thumbnail-container">
+        <img src="https://img.youtube.com/vi/sOEg_YZQsTI/hqdefault.jpg" alt="Baahubali 2 Trailer">
+        <div class="thumbnail-overlay">150M views • 3 years ago</div>
+      </div>
+      <div class="info">
+        <div class="avatar-icon">D</div>
+        <div>
+          <h4>Baahubali 2 Trailer</h4>
+          <p>Dharma Productions</p>
+          <p>150M views • 3 years ago</p>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
